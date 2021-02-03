@@ -1,0 +1,38 @@
+ja:
+  activerecord:
+    models:
+      feedback: "フィードバック"
+    attributes:
+      feedback:
+        author: "あなたの名前  "
+        message: "メッセージ"
+        author_en: "あなたの名前eng"
+        message_en: "メッセージ eng" 
+        author_ja: "あなたの名前 ru"
+        message_ja: "メッセージ ru"
+  global:
+    forms:
+      messages:
+        errors:
+          one: "1つのエラーにより、このフィードバックを保存できませんでした"
+          two: "2つのエラーにより、このフィードバックを保存できませんでした"
+          three: "3つのエラーにより、このフィードバックを保存できませんでした"
+      submit: "参加する"
+    menu:
+      home: "家"
+      feedback: "フィードバック" 
+      content_locale: "コンテンツロケール"
+  feedbacks:
+    new:
+      back: "バック"   
+    index:
+      feedback: "フィードバック"  
+      author: "著者"
+      message: "メッセージ"
+      show: "公演"
+      edit: "編集"
+      destroy: "破壊"
+      newfeedback: "新しいフィードバック"
+
+
+              

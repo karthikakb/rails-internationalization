@@ -1,0 +1,33 @@
+<%= form_for(feedback) do |f| %>
+  <% if feedback.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= t 'global.forms.messages.errors', count:feedback.errors.count %></h2>
+      
+
+      <ul>
+      <% feedback.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <% all_locales.each do |locale| %>
+
+  <div class="field">
+    <% author = "author_#{Mobility.normalize_locale(locale)}" %>
+    <%= f.label author %>
+    <%= f.text_field author %>
+  </div>
+
+  <div class="field">
+    <% message = "message_#{Mobility.normalize_locale(locale)}" %>
+    <%= f.label message %>
+    <%= f.text_field message %>
+  </div>
+  <hr>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit t 'global.forms.submit' %>
+  </div>
+<% end %>
